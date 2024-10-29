@@ -1,0 +1,98 @@
+.select-before {
+    width: 90px;
+}
+
+.select-after {
+    width: 80px;
+}
+
+[data-theme="compact"] .select-before {
+    width: 71px;
+}
+
+[data-theme="compact"] .select-after {
+    width: 65px;
+}
+.site-input-group-wrapper .site-input-split {
+    background-color: #fff;
+}
+
+.site-input-group-wrapper .site-input-right {
+    border-left-width: 0;
+}
+
+.site-input-group-wrapper .site-input-right:hover,
+.site-input-group-wrapper .site-input-right:focus {
+    border-left-width: 1px;
+}
+
+.site-input-group-wrapper .ant-input-rtl.site-input-right {
+    border-right-width: 0;
+}
+
+.site-input-group-wrapper .ant-input-rtl.site-input-right:hover,
+.site-input-group-wrapper .ant-input-rtl.site-input-right:focus {
+    border-right-width: 1px;
+}
+
+.window-layout {
+    & {
+        height: 100%;
+        display: flex;
+    }
+
+    .ant-layout-header {
+        background-color: #1a1a1a;
+        .ant-menu {
+            background-color: #1a1a1a;
+        }
+    }
+
+    .ant-layout .site-layout-content {
+        background-color: #202020;
+        .main-content {
+            position: relative;
+            .work-panel {
+                background-color: #000;
+                height: 480px;
+                width: 854px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    .ant-layout .ant-layout-sider {
+        background-color: #1e1e1e;
+    }
+
+    .ant-layout-footer {
+        flex: 0 0 auto;
+        background-color: #6f4cdc;
+    }
+}
+.site-layout-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .main-content {
+        flex: 1;
+        padding: 24px;
+    }
+    .audio-player {
+        background-color: #1a1a1a;
+        flex: 0 0 auto;
+    }
+}
+#components-layout-demo-top .logo {
+    float: left;
+    width: 120px;
+    height: 31px;
+    margin: 16px 24px 16px 0;
+    background: rgba(255, 255, 255, 0.3);
+}
+.ant-row-rtl #components-layout-demo-top .logo {
+    float: right;
+    margin: 16px 0 16px 24px;
+}
