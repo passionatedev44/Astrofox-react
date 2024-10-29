@@ -12,6 +12,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Menu, Layout } from "antd";
 const { Header, Content, Footer, Sider } = Layout;
 
+import Sidebar from "./components/Sidebar";
 import "./styles/index.css";
 
 const App: React.FC = () => {
@@ -46,7 +47,9 @@ const App: React.FC = () => {
                         </div>
                     </div>
                 </Content>
-                <Sider></Sider>
+                <Sider width={360}>
+                    <Sidebar />
+                </Sider>
             </Layout>
             <Footer style={{ textAlign: "center" }}></Footer>
         </Layout>

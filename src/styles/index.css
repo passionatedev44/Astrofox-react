@@ -48,23 +48,43 @@
         }
     }
 
-    .ant-layout .site-layout-content {
-        background-color: #202020;
-        .main-content {
-            position: relative;
-            .work-panel {
-                background-color: #000;
-                height: 480px;
-                width: 854px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-        }
+    section.ant-layout {
+        border-top: 1px solid #3a3a3a;
     }
     .ant-layout .ant-layout-sider {
         background-color: #1e1e1e;
+        .sider-content {
+            height: 100%;
+        }
+        .sider-content-layers {
+            .layers-header {
+                color: #c8c8c8;
+            }
+            .ant-tree {
+                background-color: #2c2c2c;
+                color: #dedede;
+                /* .ant-tree-treenode {
+                    &:hover {
+                        background-color: #2c2c2c;
+                        .ant-tree-indent {
+                            background-color: #2c2c2c;
+                        }
+                        .ant-tree-switcher {
+                            background-color: #2c2c2c;
+                        }
+                        .ant-tree-node-content-wrapper {
+                            background-color: #2c2c2c;
+                        }
+                    }
+                } */
+            }
+            .layers-footer {
+                padding-left: 12px;
+                background-color: #1a1a1a;
+                color: #c8c8c8;
+                z-index: 10;
+            }
+        }
     }
 
     .ant-layout-footer {
@@ -72,19 +92,31 @@
         background-color: #6f4cdc;
     }
 }
-.site-layout-content {
+.ant-layout .site-layout-content {
     height: 100%;
     display: flex;
     flex-direction: column;
+    background-color: #202020;
     .main-content {
         flex: 1;
         padding: 24px;
-    }
-    .audio-player {
-        background-color: #1a1a1a;
-        flex: 0 0 auto;
+        position: relative;
+        .work-panel {
+            background-color: #000;
+            height: 480px;
+            width: 854px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .audio-player {
+            background-color: #1a1a1a;
+            flex: 0 0 auto;
+        }
     }
 }
+
 #components-layout-demo-top .logo {
     float: left;
     width: 120px;
