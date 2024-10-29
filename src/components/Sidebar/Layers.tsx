@@ -53,7 +53,11 @@ const Layers: React.FC = () => {
                 onSelect={onSelect}
                 onExpand={onExpand}
                 treeData={treeData}
-                style={{ height: 200, borderBottom: "1px solid #3a3a3a" }}
+                style={{
+                    height: 200,
+                    borderBottom: "1px solid #3a3a3a",
+                    overflowY: "auto",
+                }}
             />
             <div className="layers-footer">
                 <Space>
